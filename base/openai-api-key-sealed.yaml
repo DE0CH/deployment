@@ -1,0 +1,16 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: openai-api-key
+  namespace: default
+spec:
+  encryptedData:
+    OPENAI_API_KEY: AgB9P/Kga1FD+Xz+O1we2rM/9MNptdt3wIDgttoh89OSPNp0aYpc0MLA1bqK5OmVgdJgkcsC5Nsm9CDnoUQBVDWYJn01ex3F3lIgs/DF8a9wfH3Q40IKNL7iIMgjitPSpWHZhm9cvWIMiioL0JoFBsvjpIHRWWyWqMA2expm0vn7+bC3KzGSkxuX5rrPHffh+j3CnlU/hByyl7gqFuy5yYvV4FhkcNd8feGf3sjMqtCrE11fezHhzNjzXzx2KRNFqbl+Um01vj1GdxbZkxAOnZW2My/7wcSRF8YmONvGznQBAvt7lLYX8BlQ0RltwG3RpBYXvfi8QSA2U4Z3N/HGsRPQr7jKjWUwy7hy8IMCc3cx+LQoZG2FLmo94SOlyY2X3C4Cp7syBg9c7DZULzCoW+MKpc1tgAdu2gsldoC1BVosYGC5oa3j0j2BXACLnFqImbbd3A2SCRyym++sZSx0aAj0KmPcL04k0MPi+fApUMalpXrJY2VYhdyG57pd/Lzm69OWrSLIRccpJWWjJdumo/YpX891DBU0OMcSMJ4M4y5MUwQ8iNG/WPio4WJCRofVUedf+Lypn0uXx5AaC6pLZP10AfSIr/5GFA1e/FxaxTXqQgePC+n8we/sr1w7ToqDEr/Jal0GWEEJMMi02Xq//tzSpNekI8A3I4GhYcpiNQ4tqqGUjQ72dl3PYjanSEkteSg30/QQWlCip1rkl22+oJu1qZyJF4wIcc1QhnztiuzCcfl6EuXvQaAchyArODtgR6GRPaQ35hx26D1Ew/glob7ZdqhHWLQjodkAio+8zk8jKHfH5hCJOJkW4bzLNCFdEkq80q6bI0IJ5Eub1ZC4+SXtIJdl7pYoEwuveMSBm6XWPhkm41558pBYXjnrdEfyjPC6rbVaRMIj44F7NlHm2eeT5+mdwg==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: openai-api-key
+      namespace: default
+    type: Opaque
