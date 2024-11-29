@@ -5,5 +5,4 @@ resources:
   - pvc.yaml
   - pv.yaml
   - openai-api-key-sealed.yaml
-  - cloudflare-tunnel-token-sealed.yaml
-  - cloudflare.yaml
+
