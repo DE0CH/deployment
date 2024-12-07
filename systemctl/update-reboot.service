@@ -6,6 +6,3 @@ After=network.target
 Type=oneshot
 Environment="DEBIAN_FRONTEND=noninteractive"
 ExecStart=/bin/bash -c 'aptitude update && aptitude -y upgrade; if [ -f /var/run/reboot-required ]; then /sbin/reboot; fi'
-
-[Install]
-WantedBy=multi-user.target
