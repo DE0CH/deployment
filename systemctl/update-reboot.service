@@ -1,11 +1,11 @@
 [Unit]
-Description=Update System, Run Watchtower, and Reboot if Required
-After=network.target docker.service
+Description=Update System and Reboot if Required
+After=network.target
 
 [Service]
 Type=oneshot
 Environment="DEBIAN_FRONTEND=noninteractive"
-ExecStart=/bin/bash -c 'aptitude update && aptitude -y upgrade; docker run --rm -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --run-once; if [ -f /var/run/reboot-required ]; then /sbin/reboot; fi'
+ExecStart=/bin/bash -c 'aptitude update && aptitude -y upgrade; if [ -f /var/run/reboot-required ]; then /sbin/reboot; fi'
 
 [Install]
 WantedBy=multi-user.target
