@@ -1,8 +1,10 @@
 [Unit]
-Description=Update System and Reboot if Required
+Description=Update System
 After=network.target
 
 [Service]
 Type=oneshot
-Environment="DEBIAN_FRONTEND=noninteractive"
-ExecStart=/bin/bash -c 'aptitude update && aptitude -y upgrade; if [ -f /var/run/reboot-required ]; then /sbin/reboot; fi'
+ExecStart=pacman -Syu --noconfirm
+
+[Install]
+WantedBy=multi-user.target
